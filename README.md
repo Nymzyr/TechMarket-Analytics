@@ -21,26 +21,31 @@ The goal of this repository is not only to analyze data but also to simulate rea
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| 01. Exploratory Data Analysis | Data cleaning, exploration and visualization | ⏳ |
-| 02. SQL Business Analytics | Business queries and KPI analysis | ⏳ |
-| 03. A/B Testing | Statistical hypothesis testing | ⏳ |
-| 04. Power BI Dashboard | Interactive business dashboard | ⏳ |
-| 05. Sales Forecasting | Time series forecasting | ⏳ |
+| 01. Exploratory Data Analysis | Data cleaning, exploration and visualization | ✅ |
+| 02. SQL Business Analytics | Business queries and KPI analysis | ✅ |
+| 03. A/B Testing | Statistical hypothesis testing | ✅ |
+| 04. Power BI Dashboard | Interactive business dashboard | ✅ |
+| 05. Sales Forecasting | Time series forecasting | ✅ |
 
 ---
 
 # 🛠 Technology Stack
 
-- Python
-- SQL
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- SciPy
-- Scikit-learn
-- Power BI
-- Git
+Python
+├── Pandas
+├── NumPy
+├── Matplotlib / Seaborn
+├── SciPy
+└── Scikit-learn
+
+SQL
+└── SQLite
+
+Visualization
+└── Power BI
+
+Version Control
+└── Git / GitHub
 
 ---
 
@@ -56,20 +61,14 @@ This project uses the **Brazilian E-Commerce Public Dataset by Olist**, adapted 
 TechMarket-Analytics/
 
 README.md
-
-01_EDA/
-
-02_SQL/
-
-03_AB_Test/
-
-04_PowerBI/
-
-05_Forecasting/
-
-datasets/
-
-images/
+01_Business_Overview_(EDA)/
+02_Customers_and_Sales_Analytics_(SQL)/
+03_Data_Preparation_and_Dashboard/
+04_AB_Testing_Case_Study/
+05_Sales_Forecasting/
+06_Datasets/
+07_Docs/
+08_Images/
 ```
 
 ---
