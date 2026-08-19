@@ -54,13 +54,6 @@ ORDER BY orders DESC;
 
 SELECT
     strftime('%Y-%m', order_purchase_timestamp) AS purchase_month,
-    COUNT(*) AS orders
-FROM orders
-GROUP BY purchase_month
-ORDER BY purchase_month;
-
-SELECT
-    strftime('%Y-%m', order_purchase_timestamp) AS purchase_month,
     COUNT(*) AS orders,
     COUNT(*) -
     LAG(COUNT(*))
@@ -75,17 +68,6 @@ ORDER BY purchase_month;
 -- Business Question 4
 -- How did monthly revenue change over time?
 -- ==========================================================
-
-SELECT
-    strftime('%Y-%m', o.order_purchase_timestamp) AS purchase_month,
-    ROUND(SUM(oi.price),2) AS revenue
-FROM orders o
-INNER JOIN order_items oi
-ON o.order_id = oi.order_id
-WHERE o.order_purchase_timestamp < '2018-09-01'
-GROUP BY purchase_month
-ORDER BY purchase_month;
-
 
 SELECT
     strftime('%Y-%m', o.order_purchase_timestamp) AS purchase_month,
